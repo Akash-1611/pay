@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .success-message {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #38a629;
+            border-radius: 10px;
+            background-color: #e7f4e8;
+        }
+        .success-message .icon {
+            font-size: 50px;
+            color: #38a629;
+        }
+        .success-message h1 {
+            margin: 20px 0;
+            color: #333;
+        }
+        .success-message p {
+            color: #666;
+        }
+        .success-message .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #38a629;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message">
+        <div class="icon">✔️</div>
+        <h1>Payment succeeded!</h1>
+        <p>Thank you for processing your most recent payment. Your Booking is confirmed on.. <span id="expiry-date"></span>.</p>
+        <a href="#" class="button">Your dashboard</a>
+    </div>
+    <script>
+        document.getElementById('expiry-date').innerText = localStorage.getItem('expiryDate');
+    </script>
+</body>
+</html>

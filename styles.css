@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7f4e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card-info-section {
+    width: 45%;
+}
+
+.card-info-section h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #38a629;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #190e0e;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.card-logos {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.card-logos img {
+    height: 30px;
+}
+
+.personal-info {
+    width: 45%;
+}
+
+.personal-info h2 {
+    margin-bottom: 20px;
+}
+
+.personal-info form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.personal-info .input-group {
+    width: 48%;
+}
+
+#pay-button {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #38a629;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pay-button:hover {
+    background-color: #0056b3;
+}
